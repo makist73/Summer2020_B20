@@ -1,4 +1,4 @@
-package day41_Static;
+package day41_toString;
 
 /*
 create an array of the carpet that contains 5 carpet objects
@@ -16,7 +16,7 @@ public class CarpetObjects {
 
     public static void main(String[] args) {
      Carpet[] carpets ={new Carpet(),new Carpet(),new Carpet(), new Carpet(), new Carpet()};
-        
+   //                       0           1               2           3               4
         carpets[0].customOrder(4.5,3.5,17.5 ,false );
         carpets[1].customOrder(5.5,3.5,18.5, true);
         carpets[2].customOrder(4.5,5.5,19.5 ,false );
