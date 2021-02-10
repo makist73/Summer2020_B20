@@ -1,0 +1,91 @@
+Methods:
+
+
+
+
+
+Method overloading:
+
+
+
+
+Method Overriding: same method name, same parameter, same return-type (MUST)
+                   MUST happen in sub class
+                   @Override MUST be applicable (for checking)
+                   Access Modifier MUST be same or more visible
+                   only instance method can be override (cannot be final or private)
+
+why we need method overriding?
+	   			to give different implementation to the method
+			Class B
+			Class  A  extends   B
+                  sub 		   super
+
+advantages: reusable
+			less memory
+			easy to memorize
+			flexible
+Methods: grouping a series of code fragments to create a function
+		(grouping the code fragments)
+
+		advantage: re-usable,  easy to maintain
+declaring methods: MUST BE created within the class
+
+
+		public     static       void    main(String[]  args){ }
+
+	Access-Modifier  Specifiers  return-type   methodName(parameter){
+
+			statements;
+
+			}
+
+
+	Access-modifier: public, protected, default, private
+			public:always be accessible, open to world.
+
+	specifiers: static, final, abstract, synchronized
+			static: can be called through class name
+
+	parameter: any dataType
+
+	methodName (Mandatory): can be any name
+
+
+	return-type(Mandatory): void, any dataType
+						void: does not return any value
+						DataType:MUST return a value
+
+
+	method without parameter: if all info are given or known
+
+		Access-Modifier  Specifiers  return-type   name(){
+				statements;
+		}
+
+	method with parameter: we needed if the method requires extra info to complete the functionality
+
+	Parameter: necessary info
+				when method is called, it's mandatory to pass argument(s)
+
+	argument: the info that will be given to the parameter
+
+	if method passes parameter(s), it's MANDATORY to give argument(s)
+
+
+
+
+branching statements:
+	continue: skips
+	break: exits the switch and loop
+	return: exits the current method
+	System.exit(0): exits the entire system
+
+
+
+return methods: return-type is not void.
+				MUST return a value
+
+return statement: exits the method, can also return a vlaue from method
+
+

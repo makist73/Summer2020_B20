@@ -1,0 +1,62 @@
+Loops: repeated action/ statement
+		for loop (for(used for index) and for each(used for elements))
+		while loop
+		do while loop
+		branching statements:  break & continue statements
+
+    for loop: only gets executed if the condition is true, stops when condition is false.
+			 we use for index numbers
+			if we know how many time will be repeted we use for loop.
+			for(initialization(init); Condition; Iterator ){
+                		statements;
+				}
+
+		int i = 0; =>   initialization (mandatory): starting point
+
+
+		i == 0;   condition(mandatory): ending point, based on initialization
+		i < 100;
+
+
+
+	Iterator:Co-related to the condition. MUST be capable enough to make the condition false.  Eventually make the condition false, so that it exits the loop.
+
+
+ -loop without curly brace: can ONLY repeat one statement, cannot have more than one  	statement in loops body
+
+       while loop:repeated single if statement
+       if we dont know how many time repated, we use while.
+
+            while(Condition){
+            	statement;
+            }
+
+   do-while: gets executed first, no matter  condition is true or false then continue if condition is true
+
+		do{
+		statements
+
+		}while(condition);
+
+while vs do-while:
+
+		when condition is false:
+						do-while loop gets executed one time
+						while loop NEVER gets executed
+						for loop NEVER gets executed
+
+for each loop: a loop that's already iterated. starting from index 0 till the end of data structure
+ for each loop:we use for elements in Collections
+          	   WE MUST HAVE A DATA STRUCTURE IN ORDER TO USE
+
+nested loop: loop inside another loop
+
+ 			when do we need: we only needed if we are repeating a loop
+
+branching statements:
+break statement: exits the loop, used for exiting switch and loop, can ONLy be used in switch and loops
+
+continue statement: skips the current iteration, WE ONLY USE IT IN THE LOOPS , jumps to 					the next iteration
+
+	System.exit(0): stops the entire program
+     				terminates everything anywhere

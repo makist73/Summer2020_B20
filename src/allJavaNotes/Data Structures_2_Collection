@@ -1,0 +1,91 @@
+data structures:
+2. Collection ==>  does not support primitives
+2-Collection:  a data structure. dynamic sized
+ Collection (dynamic, ONLY Objects)
+ Collections: class, utility class of Collection data structure
+	Collections methods:
+
+Collections Class:
+	Collections.sort(ColectionType)                :sorts it in ascending order
+	Collections.swap(ColectionType, index1, index2):swaps the elements of given indexes
+	Collections.frequency(ColectionType, Element)  :returns the frequency of element
+	Collections.max(ColectionType)                 :returns the maximum
+	Collections.min(ColectionType)				   :return the minimum
+	Collections.replaceAll(ColectionType, old, value, new value):replaces the old value
+
+	please go to Canvas -> java -> modules - > day60
+		download Collection's presentation and Collection Hierarchy (2 files)
+Collections framework: consists of multiple interfaces, each interface is implemented by class/classes
+
+			presented in "java.util"
+
+
+Collection(I): extended by List, Set, Queue
+		size is automatically adjusted
+
+		List(I): implemented by ArrayList(C), LinkedList(C), Vector(C)==> Stack(C)
+
+				has index number, accepts duplicates
+
+
+				ArrayList(C): array based class, internally uses the array
+
+								retrieving data is faster ( get() )
+
+				LinkedList(C): each objects are doublly linked
+
+						doublly linked ===>add/remove are faster
+
+
+				Vector(C): is synchronized, it's thread safe in multi-thread envireonment
+
+
+				Stack(C): child of Vector, it's thread safe in multi-thread envireonment
+
+					pop(): LIFO, last in first out
+							return the last object in the stack, and removes it from the stack
+
+
+		Queue(I): FIFO
+
+				accepts duplicates, does not have index number
+
+				poll(): removes the first object that's inserted
+
+
+		Set(I): implemented by HashSet, LinkedHashSet, TreeSet
+
+				does not accepts duplicates, does not have index number
+
+
+				HashSet vs LinkedHashSet:
+						LinkedHashSet keeps the insertion order
+
+				HashSet vs TreeSet:
+					hashset accepts null, treeset does not accept null
+					hashset is faster than treeset
+
+
+
+
+synchronized: used for achieving thread safety
+		advantage: thread safe
+
+thread-safety: one thread at a time, when there are multi-thread
+
+thread: process of the operating system scheduling the object
+
+multi-thread: two or more thread are being executed
+
+
+null keyword: default value of all reference type (class/interface)
+			does not refer to any objects, not an instance of anything
+
+
+	WebDriver driver = null;
+			driver.get(URL) // nullpointerexception
+	WebElement elemnt = null;
+
+
+String[] arr = {"A", "A", "B", "C", "A"....}
+

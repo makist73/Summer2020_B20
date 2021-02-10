@@ -1,0 +1,95 @@
+data structures:
+3. Map ==>   does not support primitives
+
+Map (dynamic, ONLY Objects )
+ 3-Map: pairs of data. Key & value. key cannot be duplicated
+    		HashMap: can have a null key, order is not guaranteed
+    		LinkedHashMap: can have a null key, insertion order
+    		TreeMap: does not have null key, keys are sorted
+    		HashTable: does not have null key, synchronized => thread-safe
+Map: pair of data, accepts key & value.  does not support primitives. KEY is always unique
+			KEY OF MAP CANNOT BE DUPLICATED, but value can be duplicated
+
+
+Map methods:
+	1. put(Key, Value): inserting key value to the map
+
+	2. get(Key): returns the value of the key from the map
+
+	3. remove(Key): removes the pair of data that's matching the key from the map
+
+	4. containsKey(key): checks if the given key is contained in the map. returns boolean
+
+	5. containsValue(Value): checks if the given value is contained in the map. returns boolean
+
+	6. clear(): clears everything ==> size will be 0
+
+	7. isEmpty(): boolean
+
+	8. keySet(): returns all the keys from the map as Set
+
+	9. values(): returns all the values from the map
+
+
+
+
+1. create a map that can contain student name and score
+		put 5 of your class mates names and thier score
+		print out the name of students who made less than 80
+
+
+2. create a map that can contain the name of countries and thier capitals
+			at least put 5 countries and thier capital city names in the map
+
+
+
+
+next:
+	map continue: list of map
+	enum
+	garbage collector
+	builder vs buffer
+
+Map:
+			creating Entry
+			list of map
+			Map & Iterator & Iterable
+
+		Garbage collector
+		Enum
+		String & StringBuilder & StringBuffer
+
+Map Interface: Key & Value, cannot be primitive
+		key MUST be unique
+
+	HashMap (C): does not keep insertion order
+				accepts null
+
+	LinkedHashMap (C): keeps the insertion order
+				accepts null
+
+	HashTable (C): is synchronized, thread-safe
+					does not accept null
+
+	TreeMap (C): sorts the keys
+			does not accept null
+
+
+
+	methods of Map: put, getKey, isEmpty, remove, containskey&value, clear(),
+
+			KeySet(): returns the keys from map
+
+			values(): returns the values from the map
+
+			entrySet(): creates an Entry
+
+					Entry<Key, Value>:
+						getValue()
+						getKey()
+
+
+
+	Iterator interface is not applicable to Map, because Map does not have inherited relation with Iterable
+
+

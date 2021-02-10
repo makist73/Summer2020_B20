@@ -1,0 +1,122 @@
+Data Structures: in order to manage data efficiently, and organized manner
+Thre are 3 main Data Structures:
+        1. Array
+        2. Collection
+        3. Map
+
+	1. Array  (fixed, accepts primitives & objects)
+	2. Collection (dynamic, ONLY Objects)
+	3. Map (dynamic, ONLY Objects)
+
+Array: size is fixed
+	   supports both primitives & objects
+	   can be multi-dimensional
+
+	   Arrays Utility:
+
+               Arrays class: presented in "java.util" package
+
+                   import java.util. Arrays ;
+
+
+                  Arrays.toString(arr):  converts array value to string
+                                       WE ONLY NEED IT TO PRINT THE ARRAY VARIABLE ITSELF
+
+                  Arrays.sort(arr): sorts the array in ascending order
+
+                  Arrays.equals(arr1, arr2): returns boolean
+
+int[] arr = {1,2,3};
+
+    for(int i= 0; i <= arr.length-1; i++){
+
+    }
+
+
+default values:
+
+    Integer: 0
+    int, long, byte, short ===> 0
+
+    Deciimals: 0.0
+    float, double ===> 0.0
+    boolean: false
+    String: null
+
+    single dimensional: a variable that contains elements (Collection of elements)
+                each element has index
+declare:
+        DataType[]  name = {data1, data2, data3..}
+                             0       1      2
+
+     initialize size only:
+           DataType[]  name = new  DataType[length]
+single dimensional array: contains multiple data
+        int[] arr= { 1, 2, 3};
+        arr[0] ==> 1
+
+        int[] arr2 = {4,5};
+        int[] arr3 = {6,7,8};
+
+
+for each loop: WE MUST HAVE A DATA STRUCTURE IN ORDER TO USE
+
+        iteration order(fixed) : 0 ~ length -1
+
+              for( DataType  name : Collection of data ){
+                    statements;
+              }
+
+          when to use?
+            when we dont need to provide indexes
+
+
+Multi-Dimensional Arrays: array that contains arrays
+                    a variable that contains arrays
+
+      Arrays.deepToString()
+
+ each array and each elemnt has index number
+
+        n dimensional array contains (n-1) dimensional array
+
+        2D array: contains 1D arrays
+
+ [index of 1D Array][index of Elements]
+3D array: contains 2D arrays
+
+            [index of 2D Array][index of 1D array][index of elements]
+
+
+        4D array: contains 3D array
+            [3D][2D][1D][E]
+
+
+            Arrays.deepToString(): for multi-D Arrays ONLY
+
+            n dimensional array contains (n-1) demensional arrays
+
+            2 dimensional array: contains single dimensional array
+                        int[][]  arr2D = { {1, 2, 3} ,  {4,5},  {6,7,8} };
+                        //                      0          1        2
+
+                            arr2D[0] ==> {1,2,3}
+                            arr2D[1] ==> {4,5}
+                            arr2D[2] ==> {6,7,8}
+
+
+                        [index of 1D arrays][index of Elements]
+
+
+            3 dimensional array: contains 2 dimensional arrays
+
+                int[][][]  arr3D = {  };
+
+
+length -1 ==> last index
+
+
+Arrays.deepToString(array): converts multi-D array to String
+
+Arrays.toString(array): converts 1D array to String
+

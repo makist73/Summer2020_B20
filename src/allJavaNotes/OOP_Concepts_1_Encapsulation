@@ -1,0 +1,87 @@
+OOP: Object Oriented Programming language
+OOP: design pattern of the application in organized and modular way
+OOP concepts is Object Oriented Programming in Java.
+They are an abstraction, encapsulation, inheritance, and polymorphism.Basically, Java OOP concepts let us create working methods and variables,
+then re-use all or part of them without compromising security.
+
+OOP: reusable
+	 less memory
+	 organized
+	 easy to maintain
+
+4 concepts:
+				1. Encapsulation
+				2. Inheritance
+				3. Abstraction
+				4. Polymorphism
+
+1. Encapsulation: we can hide direct access to the data by giving private keyword. And access the data using public getter and setter methods.
+    • Getter method is return type(you must initialize to some variable like string), no parameters, read data.
+    • Setter method is non-return method with void, must have parameter, modify the data, use this keyword if param has same name as private data.
+    Data type of the param must be same as private data. If private data is final we cannot modify.
+
+Ex:In my project i created multiple POJO/BEAN classes(Json to java (Gson, Jakson )) in order to manage test data and actual data.
+EX: I take JSON from API response and convert to object of my POJO class all variables are private with getters and setter.
+ Also in order to store credentials or sensitive data in my framework I have use encapsulation,
+ configuration reader also known as property file or excel sheet to hide data from outside world to get access.
+ I use Apache POI if the data store in Excel in order to extract/read and modify data.
+
+OOP 1- Encapsulation: hiding the data
+Encapsulation: hiding the data by using private, generate public getter & setter instance methods
+    	getter & setter
+    		getter(READ ONLY): return the private data
+
+			setter(WRITE ONLY): assigning the argument to the private variable
+		IF PRIVATE DATA IS FINAL, WE CAN ONLY GENERATE GETTER
+1. hide the data by giiving private access modifier
+					ex:    private username
+						   private password
+
+	    2. use the public getter&setters to read&modfiy the private data
+
+
+	    	getter (READ ONLY): public instance method
+	    					 	return-type MUST match with the private data' dataType
+	    					 	no parametter
+
+	    					 	FOR ONE PRIVATE DATA ONLY
+
+
+	    	setter (MODIFY ONLY): public instance method
+	    						  return type is void
+	    						  passes ONE parameter, MUST match with private data' dataType
+	    						  argument MUST be assigned to the private data
+
+	    						  FOR ONE PRIVATE DATA ONLY
+
+
+access modifiers:
+
+		public:  accessible at everywhere, open to the world.
+		protected: accessible to any class within the package, accessibe to subclasses outside package
+
+		default: accessible within the package, visible within the same package only
+ 		private: acccessible within the class
+				ONLY visible within the same class
+
+					private long ssn;
+
+  visibility: public > protected > default > private
+
+
+  Questions & Answers
+  Q-How to answer where do you use OOP in your framework,  where do you use java collections in your framework,
+  lastly where do you use method overloading in your framework?
+  A-Inheritance : TestBase (extended to test base)
+    Abstract : TestBase class is abstract class
+    Polymorphism : Used polymorphism with our WebDriver
+    Encapsulation : DRIVER UTILS
+    -------------------
+    For db and api we are using map, list of map etc. especially in utility class we apply overloading.
+
+    Base page-> abstraction
+    Pages-> inheritance
+    And also we apply encapsulation as well.
+    For polymorphism we can give example from selenium for driver etc
+
+

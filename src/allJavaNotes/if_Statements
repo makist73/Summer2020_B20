@@ -1,0 +1,124 @@
+if statements:
+
+single if: conditions
+
+        if(Boolean){
+            codes;
+        }
+
+
+        if boolean is true: codes in if statement get executed
+        if boolean is false: codes in if statement WILL NEVER gets executed
+
+if statement: conditional statements
+
+		single if statement: for one condition
+
+				if(boolean){
+					codes
+				}
+
+		codes: gets executed if boolean is true
+
+-----------------------------------------------------------------
+
+if & else: only if there are two possibilities (not less or not more)
+			if(Condition){
+				statement1
+
+			}else{  // unless, opposite of if condition
+				statement2
+
+			}
+
+			statement1: if condition is true
+			statement2: if condition is false
+
+			ONLY ONE OF THE BLOCKS GETS EXECUTED
+
+
+			if(EligibleToVote){
+					can vote
+			}else{
+					can't vote
+			}
+
+
+			if(BreakTime){
+					take coffee break
+			}else{
+				 continue the class
+			}
+
+-----------------------------------------------------------------
+
+Multi-Branch if: if there are more than 2 options or possiblities
+
+		if(Condition1){
+				A
+		} else if(Condition2){
+				B
+		} else if(Condition3){
+				C
+		} else{
+				D
+		}
+
+		A: Condition1 is true
+		B: Condition1 is false and Condition2 is true
+		C: Condition1 and Condition2 are false, and Condition3 is true
+		D: if all previous conditions are false
+
+		ONLY ONE OF THOSE BLOCK WILL GET EXECUTED (THE FIRST TRUE CONDITION)
+
+if statemenst without curly braces:  can only contain one single line of codes
+
+-----------------------------------------------------------------
+
+nested if: if statement declared in another if statements
+		   if the condition can be evaluate to multiple scenarios.
+		   if we can have pre condition (mandatory step)
+
+		   if(salary >= 30k ){
+
+		   		if(Job History >= 2){
+		   			eligible
+		   		}else{
+		   			not eligible due to job history
+		   		}
+
+		   }else{
+		   		not eligible due to salary
+		   }
+if( 0 <= score <= 100 ){
+
+			if( 90 <= score  ){
+					A
+			} else if( 80 <= score  ){
+					B
+			} else if( 70 <= score ){
+					C
+			}
+			....
+
+		}else{
+			Invalid
+		}
+
+--------------------------------------------------------
+
+Ternary: short cut of if & else statements
+
+		int num = 100;
+		String result = "";
+
+		if(num%2 == 0){
+			result = "Even";
+		}else{
+			result = "Odd";
+		}
+
+		?: if keyword, condition needs to be places before if
+		: else
+
+		IN TERNARY TOTAL NUMBER OF ? AND TOTAL NUMBER OF : MUST BE EQUAL

@@ -1,0 +1,60 @@
+
+LocalDate: year, month, day
+		year-month-day
+
+		declare:
+			of(year, month, day)
+
+		methods:
+			now(): gets the current date
+
+			format(DateTimeFormatter)
+
+LocalTime: hours, minutes, seconds, nanoOfSeconds
+
+		hour:minutes:seconds
+		24hr
+
+
+		declare:
+			of()
+
+			now()
+
+			format(DateTimeFormatter)
+
+
+
+LocalDateTime: combination of LocalDate & localTime
+
+			year-month-day hour:minutes:seconds
+
+			format(DateTimeFormatter)
+
+
+
+
+			month/day/year
+
+			day/month/year
+
+
+			am, pm
+
+			month/day/year hour:minutes am/pm
+
+
+DataTimeFormatter:
+		DateTimeFormatter.ofPatter("");
+
+			  20  2020
+		year: yy, yyyy
+		Month: MM(number), MMM(three letters), MMMM
+		days: dd
+
+		hours: hh
+		minutes: mm
+		seconds: ss
+		am/pm: a
+
+		January

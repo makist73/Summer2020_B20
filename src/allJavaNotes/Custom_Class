@@ -1,0 +1,160 @@
+custom class:
+
+	String class:
+           data/attributes:
+					text, index
+
+			actions/functions:
+					substring, charAt, indexOf, lowerCase, upperCase...
+
+
+	Car class:
+			Data/Attributes: instance variable (feilds)
+					Color, Brand, year, Model, mileage
+
+			Actions/function: instance method
+
+
+					start, stop ..
+
+
+
+objects: came from the class. instance of the class
+
+
+		Brand
+
+		Car:
+			car1: Mercedes
+			car2: Toyota
+			car3: Ford
+
+
+
+
+
+Local variable: declared within the block or method. cannot used outside of its block
+			    MUST be initialized before use
+
+instance variable: object variables, declared outside of the methods or blocks
+					each objects has its own copy of instance variables
+
+
+this. : for object Instances ONLY
+		when the instance and local has the same names.
+
+instance methods: object' method
+
+			does not have static
+
+toString method: it's an instance method, used when we print the object of object name
+				MUST be called when we print object and object name
+				implicitly called by compiler
+
+
+				return-type: String
+
+Task:
+	Cat:
+		attributes:
+				name, age, gender, color, breed
+
+		Actions:
+				setInfo, eat, drink, toString
+
+				use this. keyword
+
+	Make sure that you can print out the objects of the Cat in the print statement
+
+multi-classes: we can create as many classes as we want within one java file,
+				THERE CAN ONLY BE ONE PUBLIC CLASS.
+				PUBLIC CLASS' NAME MUST BE SAME WITH FILE NAME
+
+
+static Keyword:  static variables, static methods, static block, static class
+static keyword: belongs to the class
+				there is only one copy for all the objects of the class
+
+static members: class members
+	1. static variable
+	2. static method
+	3. static block
+	4. static class
+
+	DO NOT ACCEPT NON STATICS
+
+static methods: can call it through class name
+		ONLY accepts static members
+
+static variable: declared outside any methods or blocks with static keyword
+
+static initializer block: runs first, runs once time only as soon as the class loaded
+						used for initializing static variables
+
+
+static import: imports the static variable and static method
+
+		import.packageName.className;  // imports everything from class
+
+		import static packageName.className.staticName;  //  imports the specific static member from the class
+
+	Static vs instance:
+		static: belong to Class
+				one copy
+				only accepts static
+		instance: belong to object
+				multiple copies, each object has its own copy of instances
+
+static variable vs instance variable
+		static variable: we only use it if one common feature can be shared by all objects of the class
+						if we want all the objects to have the same data
+
+		instance variable: we only use it if there is not one common feature, and each object need to have different copy
+					if we want each object to have the unique data
+
+Student:
+	Attributes:
+		name, age, gender, ID
+
+	Actions:
+		setInfo: sets the name, age, gender, and ID of the student
+		getInfo: prints the student info
+		study
+		sleep
+		...
+
+Dog:
+	instance variables:
+			breed, size, age, color
+
+	instance methods:
+			setDogInfo, getDogInfo, eat, drink, sleep, ...
+
+
+
+Employees:
+	Attributes:
+		employeeName, gender, SSN, employeeID, JobTitle, Salary
+
+	Actions:
+		attendMeeting, Workoing, getInfo, SetInfo
+
+
+	ArrayList of employees:
+		1. remove all the employtees who are makeing lass than 100K
+		2. remove all the QAs
+
+
+
+BankAccount:
+	Attributes:
+		accountName, AccountNumber, Balcance
+
+	Actions:
+		setInfo, withdraw, deposist, checkAvailableBalance
+
+instance: each object has its own copy
+
+
+this: refers to object instances
+	this.  we only use it to call instance variable if local variable has the same name with instance variables

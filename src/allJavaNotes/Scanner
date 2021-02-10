@@ -1,0 +1,42 @@
+Scanner: used for to get user inputs
+
+        presented in package "java.util"
+
+        syntax of import:
+            import packageName.ClassName;  // imports a specific class
+
+            import java.util.Scanner;
+
+
+            import java.util.*;  // imports all the class from java.util
+
+        import statement we need to place it between class name and package name
+
+
+
+declare scanner:
+
+        Scanner  variableName  = new  Scanner(System.in);
+		Scanner scan = new Scanner(System.in);
+
+scanner' methods: reads the user input
+
+    nextInt(): only allows user to enter integers. returns the input as int primitive
+
+    nextLong(): only allows user to enter integers. returns the input as long primitive
+
+    nextDouble(): can allow the user to enter decimals. returns the input as double primitive
+
+Scanner Methods:
+nextByte():  	Returns input as a byte
+nextShort(): 	Returns input as a short
+nextInt(): 		Returns input as an int
+nextLong(): 	Returns input as a long
+nextBoolean(): 	Returns input as a boolean- true or false
+nextFloat(): 	Returns input as a float
+nextDouble(): 	Returns input as a double
+next(): 		Returns input(single word) as a String,
+					"Today is Tuesday" ==>today  ONLY TAKES FIRST WORD
+nextLine(): 	TAKES EVERYTHING THAT THE SCANNER HAS. EVEN THE ENTER. returns string
+
+close(): 		closes the scanner

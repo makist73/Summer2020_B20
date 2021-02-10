@@ -1,0 +1,79 @@
+Variables: makes the data reusable
+
+        declare variables:
+            DataType  variableName = Data;(semicolon)
+
+
+ 			double a = 0.3;
+            double TaxRate =0.3;
+
+            rules for variable name:  MUST be readable & meanigful
+                            1.  MUST be unique( cannot be duplicated)
+                            2.  needs to start with letters
+                            3.  cannot contain any special characters other than $ and _
+                            4.  cannot be java reserved word
+                            5.  if variable name contains more than one word, we apply camelCase
+
+                            $num
+
+ primitive datatypes:(8 of them) byte, short, int, long, float, double, char, boolean
+
+        for numbers:  byte, short, int, long, float, double
+            for whole number (ONLY): byte, short, int, long  (int is prefered by compiler)
+                        0, 1, 2,3,4,5....
+
+            for decimal number: float, double  (double is prefered by compiler )
+                    2.5, 3.5 ....
+
+            double > float > long > int > short > byte
+
+            large primitive CANNOT be assigned to smaller primitive
+            smaller primitive CAN be assigned to larger primitives
+
+-----------------------------------
+local variables: variables that are declared within the block or methods
+                MUST be initialized before use
+
+
+=: assignment operator
+    used for initializing values to variables
+
+
+boolean: expression of true or false
+        MUST be evaluted to true or false
+
+ char: used for single character. character MUST be given in a single quote
+
+           char ch1 = '1';
+   EVERY SINGLE CHARS HAS ITS OWN CORRESPONDING NUMBER
+
+           char ch2 = 65;
+
+           'A' + 2 ==> 67
+           int num = 'A';   ==> 65
+
+
+int: Integer numbers
+double: decimal numbers
+boolean: true/false
+char: single characters, ''
+
+String: sequence of characters, string of text. must be given in ""
+        NOT A PRIMITIVE
+ + with String: concates and returns the string
+
+                        any data can be concated to a string
+
+"123"+1 ==>1231
+123 + 1 ==> 124
+
+Concatenation VS Addition:
+
+      number + number ==> addition
+
+      text + number ==> concatenation
+
+
+concatenation: append
+    "Hello" + 123 ==> Hello123
+    "12" + 13 ==> 1213

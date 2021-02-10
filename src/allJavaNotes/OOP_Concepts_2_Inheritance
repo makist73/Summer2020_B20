@@ -1,0 +1,88 @@
+2. Inheritance: it is used to define relationship between two class, which a child class
+occurs all the properties and behaviours of a parent class. Provides code reusability.
+Ex: in my framework I have a TestBase class which I store all my reusable code and methods.
+ My test execution classes and elements classes will extend the TestBase in order to reuse the code.
+
+OOP 2- Inheritance: sub/super class, IS A (focuses on the classes)
+Inheritance: build parent(super) & sub(child) relations (IS A relationship)
+     IS A relation (super & sub classes), extends keyword
+ 						Has A relation
+Inheritance: building relationships between the classes
+			 super(Parent) & sub(child) classes ======> IS A relation
+advantage:
+					east to maintain
+					reusable
+					readable, clear,clean, less codes..
+
+			 easiest & fastest way to get rich
+
+			 sub class (child): can inherit methods & variables from super class (visible once only)
+			 					constructor cannot be inherited
+
+
+ 			 super (parent): cannot inherit from sub(child)
+
+sub class: can inherit from super class ( visible methods & variables)
+ 			 advantages:  improves re-usabilities
+ 			 			  easy to maintain
+
+
+			  one class can ONLY extend one class
+			  one class can be extended by multiple class
+
+			  super class cannot extend its sub class
+
+IS A relation:	inherited relations between classes
+
+	class Animal{
+
+	}
+
+	class dog extends Animal{
+
+	}
+
+	Dog IS An Animal
+
+
+Has A relation:
+
+		class Engine{
+
+		}
+
+		class Car{
+
+			Engine obj = new Engine();
+		}
+
+		Car Has An Engine
+
+implemented:
+        inheritance, constructor, encapsulation, method overloading, Array, ArrayList, bulk operations, predicate, loop..
+
+
+Has A vs Is A:
+
+        ScreumTeam Has A Tester
+        ScreumTeam Has A Developer
+
+        Developer Is An Employee
+        Developer IS A Person
+
+        Employee Is A Person
+
+        constructor call (in inheritance):
+                    1. super constructor MUST be called in sub class
+                    2. if super class constructor is defaulut constructor, it's implicitly called
+                    3. if super class constructor is not defaulut constructor, need to be called manually with super()
+
+    this keyword: refers to object instances of the current class
+        this. : calls the instance from current class
+        this(): calls the constructor from the current class
+
+
+    super keyword: refers to the object instances of the super class
+        super. : calls the instance from super class
+        super(): calls the super class' constructor
+

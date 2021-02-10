@@ -1,0 +1,168 @@
+Operators:
+
+Arithmetic operators:
+				+: addition
+				-: subtraction
+				*: multiplication
+				/: division
+
+				%: remainder
+
+		formula for finding remainder:
+					remainder = numerator - (denominator * whole number of result)
+
+
+10 + 9 ==> 19
+10 - 9 ==> 1
+10 * 9 ==> 90
+
+10/2 ==> 5
+10/3 ==> 3
+10.0/3 ==> 3.333
+10/3.0 ==>3.333...
+
+-------------------------------------------------------
+ relational operators: returns boolean at the end
+            >: greater than
+            <: less than
+            >=: greater or equal
+            <=: less than or equal
+            ==: equal
+            !=: not equal
+
+            9 > 8  ==> true
+            7 < 6 ==> false
+            7 >= 7 ==> true
+            8 >= 6  ==> true
+            9 <= 25 ==> true
+
+            10 == 10 ==> true
+            true == false  ==> false
+            'A' == 'A'   ==> true
+            "Muhtar" == "Good Guy"  ==> false
+
+            9 != 10 ==> true
+            true  != false ==>true
+
+=: assignment
+    int a =100;
+
+        a = 200;
+
+= vs ==:
+    =: assigns value to variable
+    ==: returns boolean
+
+boolean: ==, !=, >, <, <=, >=
+
+100
+
+even: 100%2 == 0
+odd: 100%2 != 0
+
+-------------------------------------------------------------
+
+Unary Operators: +, -, --, ++
+    +: positive, > 0
+
+        12 ==> positive
+        +12 ==> positive number
+
+    -: negative, <0
+         -12 ==>  < 0
+
+         1 - -10 = 11   ==>  -- == +
+         1 - 10 = -9  ==>
+         -1 - -10 ==>  -1 + 10  ==> 9
+ --: decreases value of varaible by 1
+
+ ++: increases the value of variable by 1
+
+
+two types of increament/decrements:
+
+        pre: place the increament/decreament operators before variable
+            increases or decreases the value by 1 Immediately
+                --a, ++a
+
+
+        post: postphone,  place the increament/decreament operators after variable
+               first passes the current value,  then next step increases/decreases value by 1
+                a++; a--;
+
+----------------------------------------------------
+
+ShortHand Operators: =, +=, -=, *=, /=, %=
+
+            =: assignment
+                int a = 200;
+                    a = 400;
+
+            +=: addition Assignment ( the only one we can apply to String)
+                int a = 200;
+                    a = a + 100; ===> 300
+
+                int b = 200;
+                    b += 100; ===>300
+
+            -=: subtraction assignment
+                int a = 200;
+                    a = a - 50 ;  ===> 150
+
+                int b = 200;
+                    b -= 50;  ==>150
+
+            *=: multiplication Assignment
+                int a = 10;
+                    a = a * 2   ===> 20
+
+                int b= 10;
+                   b *= 2 ==> 20
+
+
+           /= : division assignment
+
+                int budget = 100000;
+                    budget = budget / 2
+
+                    budget /= 2;
+
+
+            %=: remainder assignment
+                int a = 10;
+                a %= 2; ===> a = a % 2
+
+
+----------------------------------------------------
+
+Logical operators: for Boolean ONLY
+        !:  Not, opposite..
+
+        &&: and, in order to return true, both expressions MUST be true
+
+        ||: or, the only time || returns false is when both expressions are false
+
+
+-----------------------------------------------------------------------
+
+ primitive casting: implicit casting & explicit casting
+
+            implicit casting: casting smaller primitive type to larger primitive type
+                    int a = 10;
+                    long b = a;
+
+                    automatically done
+
+                        manually:
+                            int a = 10;
+                            long b = (long)a;
+
+
+
+            explicit casting: casting larger primitives to smaller primitive types
+                                MUST be done manually
+
+                           double num1 = 100.5;
+                           int num2 =  (int)num1;     100
+
+                           we need it when we assign larger primitives to smaller primitive types

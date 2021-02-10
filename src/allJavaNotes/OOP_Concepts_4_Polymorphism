@@ -1,0 +1,220 @@
+4. Polymorphism: it is ability of a object to behave in multiple forms. We use method overloading and overriding
+ to achieve the polymorphism. Occurs when a parent class reference is refer to a child class object.
+ If the super class is Abstract or Interface the class can only be reference type. For the abstract class object it must
+  have to be extended regular class, and for the interface it has to be implemented class.
+  • Overloading(static, compile time) mean same method name and different parameter, occur in same class.
+    We can overload static, final and private methods. Return type can be different or same.
+  • Overriding(dynamic, runtime) means same method name and same parameter, occur in different class that has inheritance
+     relationship(Is-A). We cannot override static, final and private methods. In method overriding return type must be
+     same or coverient. static methods can not be override.
+     Ex: WebDriver(interface) driver = new ChromeDriver()(class);
+     =>we are initializing Chrome browser using Selenium WebDriver.
+     It also means we are creating a reference variable (driver) of the interface (WebDriver) and creating an Object.
+
+
+     Method Overriding: same method name & same parameter, different implementation
+         					MUST happen in sub(child) class
+         					ONLY instance methods (non-static, private , final)
+         					access modifier must be same or more visible
+         					same returntype, method name, parameter
+
+
+method overloading: same method name , different parameter
+					return-type can be same or different
+					access modifier does not matter
+					can be overloaded in same class
+method overloading: different methods with same name
+						same method name, different parameter
+    Final keyword: constant
+method overloading: multiple methods have same method name
+
+					parameter MUST be different (either dataType or number of parameters)
+
+					return-type can be same or different
+
+					advantages:
+							1. easy to remember
+							2. easy to read
+							3. reusable
+							4. flexible
+
+
+				substring(beg, end)
+				substring(beg)
+
+				substringWithBeginningAndEndingIndex(beg, end)
+				substringWithBeginningIndexOnly(beg)
+
+
+				replace('a', 'a')
+				replace("a", "a")
+Overriding vs Overloading
+		Super keyword
+method overloading: same method name, different parameter
+                    access modifier does not matter
+                    return-type does not matter
+                    any method can be overload
+
+                    TestBase (super)
+					setup:
+						setup the browser
+						open browser
+						maximize window
+						implicit wait
+						go to URL
+						log in
+
+						1 sub class does not require maximize window
+                        							@Override
+                        							setup:
+                        								setup the browser
+                        								open brwoser
+                        								implicit wait
+                        								go to URL
+                        								log in
+
+ OOP 4-  Polymorphism: objects behaving in different forms
+       	parent can be referenced to child class objects
+       	Upcasting
+       	Downcasting
+   Polymorphism: object's behave in different forms
+    Polymorphism:  behaviors of the objects in many forms
+    			parent is being refrenced to child class' objects
+                occurs when parent class/interface is referenced to child class' object
+
+                Dog dog = new Dog();
+
+                Animal animal1 = new Dog();
+                Animal animal2 = new Cat();
+                Animal animal3 = new Tiger();
+
+
+      ChromeDriver driver = new ChromeDriver();
+      WebDriver driver = new ChromeDriver();
+
+      driver = new FireFoxDriver();
+      driver = ...
+
+      TakeScreenShot ts = new ChromeDriver();
+
+      Polymorphism: objects behaviors in many forms
+
+           only occurs when super class/interface is referenced to child class' objects
+
+           Reference type decides what can be called or accessible
+
+           if a method is exist in both reference type and object type:
+                               if overriden: Object Type' (Child, the overriden one) gets executed (ALWAYS)
+                               if not overriden: Reference Type' (parent) gets executed
+
+
+                ChromeDriver driver = new ChromeDriver();
+
+                FireFoxDriver driver2 = new FireFoxDriver();
+
+                EdgeDriver driver3 = new EdgeDriver();
+
+                or:
+
+            WebDriver driver = new ChromeDriver();
+
+                               new FireFoxDriver();
+
+                               new EdgeDriver();
+
+               driver.get(URL)
+
+
+
+   public static WebDriver getDriver(){
+           return new ChromeDriver();
+           or
+           return  new FireFoxDriver();
+           or
+           return new EdgeDriver();
+   }
+   Type Castings: converting one type to another
+
+       1. Primitive Type casting:
+               double > float > long > int > short > byte
+
+                   implicit casting: smaller type to larger, done implicitly
+
+                               int x = 100;
+                               long y = x;
+                               double z = y;
+
+                   explicit casting: larger type to smaller, MUST be done manually
+
+                               double x = 1000;
+                               int y = (int)x;
+
+
+       2. Reference Type Casting:
+                   pre condition: There MUST be IS A relation
+
+               upcasting: casting from sub  type to super  type, done implicitly
+
+                   Dog dog = new Dog();
+                   Cat cat = new Cat();
+
+                   Animal animal = dog;  // done implicitly
+                           animal =  cat;
+
+               downcasting: casting from super type to sub type, MUST be done manually
+
+
+   				A obj = new B();
+   				WebDriver driver =new ChromeDriver();
+   				List list = new ArrayList();
+   				...
+
+
+   					driver.get(URL)
+
+   					Always the overriden one gets executed
+
+   					if it's not overiden will execute parent' version
+
+   					class A{
+   						x
+   					}
+
+
+   					class B extends A{
+   						y
+   					}
+
+   					A obj = new B();
+   					obj.x
+   					// obj.y
+
+   					( (B)obj ).y
+
+
+
+   					Animal{
+   						sleep();
+   					}
+
+   					Dog extends Animal{
+   						bark();
+   					}
+
+
+   					Animal  animal = new Dog();
+   						animal.sleep();
+   						// animal.bark();
+
+   						( (Dog)animal ).bark();
+
+   						( (Cat)animal ).scartch();  // class cast exception
+
+
+
+
+   					WebDriver driver = new ChromeDriver();
+
+   					// driver.takeScreenShot
+
+   					( (TakeScreenShot)driver).takeScreenShot()
