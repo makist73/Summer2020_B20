@@ -10,9 +10,9 @@ OOP: reusable
 	 easy to maintain
 
 4 concepts:
-				1. Encapsulation
-				2. Inheritance
-				3. Abstraction
+				1. Encapsulation: hiding the data  (focuses on the data)
+				2. Inheritance: sub/super class, IS A relation (focuses on the classes)
+				3. Abstraction: (focuses on the method)
 				4. Polymorphism
 
 1. Encapsulation: we can hide direct access to the data by giving private keyword. And access the data using public getter and setter methods.
@@ -61,7 +61,7 @@ access modifiers:
 		protected: accessible to any class within the package, accessibe to subclasses outside package
 
 		default: accessible within the package, visible within the same package only
- 		private: acccessible within the class
+ 		private: accessible within the class
 				ONLY visible within the same class
 
 					private long ssn;

@@ -18,7 +18,7 @@ contains()
 startsWith()
 endsWith()
 
-String is sequneces of characters, it is immutable object, once the object is created we cannot modify it, cannot change.
+String is sequences of characters, it is immutable object, once the object is created we cannot modify it, cannot change.
 each charcater in string has representive number called index number starts from zero
 							String str = "Cybertek12 $"
 							// index:     0123456789...

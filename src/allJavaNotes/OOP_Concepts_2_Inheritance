@@ -7,7 +7,7 @@ OOP 2- Inheritance: sub/super class, IS A (focuses on the classes)
 Inheritance: build parent(super) & sub(child) relations (IS A relationship)
      IS A relation (super & sub classes), extends keyword
  						Has A relation
-Inheritance: building relationships between the classes
+Inheritance: building relationships between the classes for increase the reusablity, maintain easy.(for interview)
 			 super(Parent) & sub(child) classes ======> IS A relation
 advantage:
 					east to maintain

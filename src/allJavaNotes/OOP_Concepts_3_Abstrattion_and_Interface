@@ -218,7 +218,7 @@ abstraction:
        methods and variables
 
    interface:
-       public interface Interfacename{
+       public interface InterfaceName{
 
        }
 
@@ -230,20 +230,20 @@ abstraction:
        A class can extend one class (extends)
        A class can implement multiple interfaces (implements)
 
-   what we can have in interface? ( by default, everything is public)
-       variables: public static final (by default )
+   what we can have in interface? ( by default, everything is public because all the sub class has to reach them)
+       variables: public static final (by default ), there is no other type of variable in interface.
 
        methods: static methods
                 abstract method (abstract keyword is not mandatory)
-                default method
+                default method(we have to declare default keyword. we never use anywhere in Selenium or API.)
 
 
    what we cannot have in interface?
    we cannot have:
-                   instance variables
+                   instance variables(we use to store different values to the object)
                    instance methods
-                   Constructor
-                   Blocks
+                   Constructor(we use to create object in the class)
+                   Blocks(instance or static)
 
 
 
@@ -262,18 +262,29 @@ abstraction:
                                        abstract method
                                        all access modifiers
 
-                                       a class can extend one abstract class
+                                       a class can extend  one abstract class
 
 
                        Interface: static (by default it's final)
                                    static methods
-                                   abstract method
+                                   abstract method(is the only recommendation in interface)
                                    public
 
-                                   we can eliminate the unnecessary implementations to sub class
+ why we need interfaces? we can eliminate the unnecessary implementations to sub class
 
                                    a class can implements multiple interfaces
 
+WebDriver: (It's a interface)
+    get
+    close
+    switch
+    ....
+
+List: (It's a interface)
+    get
+    set
+    size
+    ...
 
 extends vs implements
 
@@ -306,7 +317,7 @@ Ex: In my framework I have achieve abstraction by using collections or Map, beca
         iii)To handle dynamic elements store it in the list and identify by index:
         List<WebElement> all=driver.findElements(By.tagname(“”)); (or other locators).
 
- WebDriver
+ WebDriver(one of the interfaces we use in selenium)
    			get(URL);
 
    		chrome: get(URL){ }

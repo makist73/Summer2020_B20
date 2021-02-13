@@ -13,7 +13,7 @@ Exception Handling:
         try&catch block    :  that used for handling exceptions permanently
         multi-catch block  :
         finally blocks     :
-        throws Keyword 	   : in method signature, it's temporarily solution. Fast and cheap way. Less codes.
+        throws Keyword 	   : Handles checked exceptions,in method signature, it's temporarily solution. Fast and cheap way. Less codes.
         throw keyword      : manually throwing exceptions, used for creating an exception.
         custom exception   :
 
