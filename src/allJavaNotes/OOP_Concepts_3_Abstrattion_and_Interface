@@ -1,10 +1,10 @@
 
 3. OOP
-Abstraction: Focuses on the method, hiding the implementation.
-            Focuses on the implementation of the method mostly, focusing on the essentials in the methods.
+Abstraction:Focuses on the methods, focusing on the essentials in the methods.
    			hiding the implementation (details) of the methods, focusing on essentials, without worrying about the details.
    			we only know what it does, but we dont know how it's done.
-   			basically result is all that matters without worrying about the details
+   			basically result is all that matters without worrying about the details.
+
 abstraction:
            abstract method
            abstract class
@@ -54,11 +54,11 @@ abstraction:
 
 
    1. abstract method: without body
-                    a method without implementation (does not have body)
+                    a method without implementation (does not have body,  ends with ; (semicolon)
    					meant to be overridden ( CANNOT BE final, static, private)
 
    			Access-Modifier  abstract  Return_type   methodName(Parameter);
-   			(none private)    MUST		MUST
+   			(not private)    MUST		MUST
 
    			public abstract double area();
 
@@ -69,41 +69,18 @@ abstraction:
    				1. abstract class
    				2. interface
 
+   1. abstract class: has to be super class (cannot be final class, because final class is meant to be sub class ONLY)
+                       MUST be able to inherit
+                       not concrete, cannot create an object, Object MUST be in concrete class.
+                       meant to be extended
+         syntax:   Access-Modifier  abstract class ClassName {}
 
-   1. abstract class: not concrete, cannot create an object, Object MUST be in concrete class.
-   mean to be extended (final)
    class can extend one abstract class
-   meant to be super class (cannot be final class, because final class is meant to be sub class ONLY)
-   					meant to be extended(final),
-   					MUST be able to inherit
 
-
-   Ex1:
-       shape: not concrete ==> abstract
-           area();
-
-       circle: name
-           attributes: r
-           area():
-               r*r*PI
-
-       square: name
-           attributes: a
-           area():
-               a*a
-       rectangle
-           attributes: w, l
-           area():
-               w*l
-       triangle
-           attributes: b, h
-           area():
-               b*h*0.5
    Abstraction:
            1. shape
            2. animal
            3. car
-
            4. phone
 
    IS A relation:
@@ -118,18 +95,12 @@ abstraction:
 
 
    abstract class vs regular class:
-
-   	regular class cannot have:
-   				abstract methods
-
-   	abstract class cannot have:
-   				final
-   				object
-
    	abstract class can have: everything that regular class can have + abstract methods
 
-
-
+          but  abstract class  cannot have any object and
+                                                 cannot be final.
+    regular class cannot have:
+   				            abstract methods
 
    2. Interface (not a class): blue print class. specifies the behaviours or action the class should implement
            more like a contract, if the class needs we can give it to, if not we dont have to
@@ -201,7 +172,7 @@ abstraction:
            eat(){}
            drink(){}
 
-       Duck: extends Animal implemnts flyable, swimmable, Playable
+       Duck: extends Animal implements flyable, swimmable, Playable
             eat(){}
             drink(){}
             fly(){}
@@ -276,7 +247,7 @@ abstraction:
 
 
 
-   Interface vs Abstract class: both of the are used for achieving abstraction
+   Interface vs Abstract class: both of them are used for achieving abstraction
                                 both meant to be inherited
                                 both cannot be final
                                 both cannot create object
@@ -305,11 +276,11 @@ abstraction:
 
 
 extends vs implements
-   							class   implements  interface
-   							class   extends     class
-   							interface  extends    interface
-   							class    extends   class    implements     interface
 
+   							class   extends    class
+   							interface  extends   interface
+   							class   implements  interface
+   							class    extends   class    implements   interface
    							class   implements  interface1, interface2 ....
 
 
