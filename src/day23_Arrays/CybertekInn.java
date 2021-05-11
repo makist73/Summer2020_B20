@@ -4,7 +4,7 @@ package day23_Arrays;
             King Bed ==> 120$
             Queen Bed ==> 100$
             single Bed ==> 80$
-  the program asks the user which bedroom does he/she wants to reserve and calculats the total price
+  the program asks the user which bedroom does he/she wants to reserve and calculates the total price
   and then the program will ask:
   do you want to reserve another room:
    if yes ==> repeat the previous steps

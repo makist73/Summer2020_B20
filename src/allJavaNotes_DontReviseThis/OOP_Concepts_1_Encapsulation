@@ -13,7 +13,7 @@ OOP: reusable
 				1. Encapsulation: hiding the data  (focuses on the data)
 				2. Inheritance: sub/super class, IS A relation (focuses on the classes)
 				3. Abstraction: (focuses on the method)
-				4. Polymorphism
+				4. Polymorphism (focuses on the Object)
 
 1. Encapsulation: we can hide direct access to the data by giving private keyword. And access the data using public getter and setter methods.
     • Getter method is return type(you must initialize to some variable like string), no parameters, read data.
